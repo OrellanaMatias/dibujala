@@ -1,0 +1,727 @@
+* {
+	background: #141e30;
+	background-color: -webkit-linear-gradient(to right, #243b55, #141e30);
+	color: azure;
+	font-family: VT323;
+	font-weight: 500;
+	font-size: 27.5px;
+}
+
+.container {
+	margin-top: 100px;
+	display: flex;
+	justify-content: center;
+	margin-bottom: 100px;
+}
+
+.backgroundImageInvisible {
+	opacity: 0%;
+}
+
+.invisible {
+	opacity: 0%;
+}
+
+.backgroundImage {
+	height: 480px;
+	width: 800px;
+	background-image: url(./assets/images/Milan\ Stadium.png);
+	background-size: 330%;
+	background-position: center;
+	background-position-y: -140px;
+}
+
+.backgroundImage {
+	height: 480px;
+	width: 800px;
+	background-image: url(../../assets/images/Milan\ Stadium.png);
+	background-size: 330%;
+	background-position: center;
+	background-position-y: -140px;
+}
+
+.backgroundImage2 {
+	height: 480px;
+	width: 800px;
+	background-image: url(../../assets/images/Tokyo\ Stadium.png);
+	background-size: 330%;
+	background-position: center;
+	background-position-y: -140px;
+}
+
+.backgroundImage3 {
+	height: 480px;
+	width: 800px;
+	background-image: url(../../assets/images/Snowman\ Stadium.png);
+	background-size: 330%;
+	background-position: center;
+	background-position-y: -140px;
+}
+
+.backgroundImage4 {
+	height: 480px;
+	width: 800px;
+	background-image: url(../../assets/images/Rainbow\ Stadium.png);
+	background-size: 330%;
+	background-position: center;
+	background-position-y: -140px;
+}
+
+.gameGrid {
+	position: relative;
+	top: -342px;
+	margin-right: 244px;
+	margin-left: 244px;
+	display: grid;
+	grid-template-columns: 100px 100px 100px;
+	grid-template-rows: 70px 70px;
+	column-gap: 6px;
+	row-gap: 6px;
+	background-color: white;
+	opacity: 30%;
+	font-size: 55px;
+}
+
+div:hover.grid1 {
+	background-color: royalblue;
+}
+
+.grid1 {
+	text-align: center;
+	background-color: white;
+	font-size: 1.3em;
+	font-weight: 200;
+}
+
+.message {
+	position: relative;
+	top: 215px;
+	left: 20px;
+	background: none;
+}
+
+.display1 {
+	position: relative;
+	top: -240px;
+	left: 20px;
+	background-color: BLACK;
+	width: 210px;
+}
+
+.display2 {
+	position: relative;
+	top: -225px;
+	left: 20px;
+	background-color: BLACK;
+	width: 210px;
+}
+
+.printPlayer {
+	position: relative;
+	top: -296px;
+	left: 120px;
+	background: none;
+}
+
+.printComputer {
+	position: relative;
+	top: -281px;
+	left: 120px;
+	background: none;
+}
+
+.next {
+	width: 115px;
+	height: 100px;
+	background-color: darkorange;
+	position: relative;
+	top: -50px;
+	left: 340px;
+	font-size: small;
+	/* background: none; */
+}
+
+.gameButton {
+	position: relative;
+	top: -150px;
+	left: 230px;
+	color: #fff;
+	border: 2px solid rgb(216, 2, 134);
+	border-radius: 0px;
+	padding: 18px 36px;
+	display: inline-block;
+	letter-spacing: 1px;
+	cursor: pointer;
+	box-shadow: inset 0 0 0 0 #d80286;
+	-webkit-transition: ease-out 0.4s;
+	-moz-transition: ease-out 0.4s;
+	transition: ease-out 0.4s;
+}
+
+.gameButton2 {
+	position: relative;
+	top: -150px;
+	left: 219px;
+	color: #fff;
+	border: 2px solid rgb(216, 2, 134);
+	border-radius: 0px;
+	padding: 18px 36px;
+	display: inline-block;
+	letter-spacing: 1px;
+	cursor: pointer;
+	box-shadow: inset 0 0 0 0 #d80286;
+	-webkit-transition: ease-out 0.4s;
+	-moz-transition: ease-out 0.4s;
+	transition: ease-out 0.4s;
+}
+
+.slide_right:hover {
+	box-shadow: inset 400px 0 0 0 #d80286;
+}
+
+.start_button {
+	position: relative;
+	top: 100px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	color: #fff;
+	border: 2px solid rgb(216, 2, 134);
+	border-radius: 0px;
+	padding: 18px 36px;
+	letter-spacing: 1px;
+	cursor: pointer;
+	box-shadow: inset 0 0 0 0 #d80286;
+	-webkit-transition: ease-out 0.4s;
+	-moz-transition: ease-out 0.4s;
+	transition: ease-out 0.4s;
+}
+
+/* ----------------------------------- JUGADORES Y ANIMACIONES -------------------------------------- */
+/* --------------------------------------- AAAAAAA ---------------------------------------- */
+
+/* jugador amarillo */
+.yellow_kick_original {
+	background: none;
+	position: relative;
+	width: 45px;
+	height: 100px;
+	top: 340px;
+	left: 330px;
+	background-image: url(../../assets/images/player1.png);
+	background-size: 120%;
+}
+
+/* jugdor rojo */
+.red_kick_original {
+	background: none;
+	width: 45px;
+	height: 100px;
+	position: relative;
+	top: 340px;
+	left: 330px;
+	background-image: url(../../assets/images/comp1.png);
+	background-size: 120%;
+}
+
+/* arquero rojo */
+.red_goalkeeper_original {
+	background: none;
+	width: 45px;
+	height: 100px;
+	position: relative;
+	top: 25px;
+	left: 380px;
+	right: 380px;
+	background-image: url(../../assets/images/comp3.png);
+	background-size: 102%;
+	background-repeat: no-repeat;
+}
+
+/* arquero amarillo */
+.yellow_goalkeeper_original {
+	background: none;
+	width: 45px;
+	height: 100px;
+	position: relative;
+	top: 25px;
+	left: 380px;
+	right: 380px;
+	background-image: url(../../assets/images/player3.png);
+	background-size: 102%;
+	background-repeat: no-repeat;
+}
+
+/*  ----------------------------------- KEYFRAMES para animaciones del arquero ------------------------------- */
+
+@keyframes goalkeeperPosition1 {
+	0% {
+		top: 0px;
+		left: 350px;
+		transform: rotate(0deg);
+	}
+
+	100% {
+		top: -40px;
+		left: 250px;
+		transform: rotate(-45deg);
+	}
+}
+
+@keyframes goalkeeperPosition2 {
+	0% {
+		top: 0px;
+		transform: rotate(0deg);
+	}
+
+	100% {
+		top: -40px;
+		transform: rotate(-40deg);
+	}
+}
+
+@keyframes goalkeeperPosition3 {
+	0% {
+		top: 0px;
+		left: 380px;
+		transform: rotate(0deg);
+	}
+
+	100% {
+		top: -40px;
+		left: 480px;
+		transform: rotate(75deg);
+	}
+}
+
+@keyframes goalkeeperPosition4 {
+	0% {
+		left: 350px;
+		transform: rotate(0deg);
+	}
+
+	100% {
+		left: 260px;
+		transform: rotate(-75deg);
+	}
+}
+
+@keyframes goalkeeperPosition5 {
+	0% {
+		top: 25px;
+		transform: rotate(0deg);
+	}
+
+	100% {
+		top: 20px;
+		transform: rotate(12deg);
+	}
+}
+
+@keyframes goalkeeperPosition6 {
+	0% {
+		left: 380px;
+		transform: rotate(0deg);
+	}
+
+	100% {
+		left: 480px;
+		transform: rotate(75deg);
+	}
+}
+
+/*  -------------------------------- Clases para animacion del pateador ------------------------------------- */
+
+/* jugador amarillo */
+.yellow_kick_1 {
+	background: none;
+	position: relative;
+	width: 45px;
+	height: 100px;
+	top: 340px;
+	left: 350px;
+	background-image: url(../../assets/images/player2.png);
+	background-size: 120%;
+}
+
+/* jugador rojo */
+.red_kick_1 {
+	background: none;
+	width: 45px;
+	height: 100px;
+	position: relative;
+	top: 340px;
+	left: 350px;
+	background-image: url(../../assets/images/comp2.png);
+	background-size: 120%;
+}
+
+/*  -------------------------------- Clases para animacion del arquero ------------------------------------- */
+
+/* Arquero rojo */
+.red_goalkeeper_1 {
+	animation-name: goalkeeperPosition1;
+	animation-duration: 1s;
+
+	background: none;
+	width: 45px;
+	height: 100px;
+	position: relative;
+	top: 25px;
+	left: 380px;
+	right: 380px;
+	background-image: url(../../assets/images/comp3.png);
+	background-size: 102%;
+	background-repeat: no-repeat;
+}
+
+.red_goalkeeper_2 {
+	animation-name: goalkeeperPosition2;
+	animation-duration: 1s;
+
+	background: none;
+	width: 45px;
+	height: 100px;
+	position: relative;
+	top: 25px;
+	left: 380px;
+	right: 380px;
+	background-image: url(../../assets/images/comp3.png);
+	background-size: 102%;
+	background-repeat: no-repeat;
+}
+
+.red_goalkeeper_3 {
+	animation-name: goalkeeperPosition3;
+	animation-duration: 1s;
+
+	background: none;
+	width: 45px;
+	height: 100px;
+	position: relative;
+	top: 25px;
+	left: 380px;
+	right: 380px;
+	background-image: url(../../assets/images/comp3.png);
+	background-size: 102%;
+	background-repeat: no-repeat;
+}
+
+.red_goalkeeper_4 {
+	animation-name: goalkeeperPosition4;
+	animation-duration: 1s;
+
+	background: none;
+	width: 45px;
+	height: 100px;
+	position: relative;
+	top: 25px;
+	left: 380px;
+	right: 380px;
+	background-image: url(../../assets/images/comp3.png);
+	background-size: 102%;
+	background-repeat: no-repeat;
+}
+
+.red_goalkeeper_5 {
+	animation-name: goalkeeperPosition5;
+	animation-duration: 1s;
+
+	background: none;
+	width: 45px;
+	height: 100px;
+	position: relative;
+	top: 25px;
+	left: 380px;
+	right: 380px;
+	background-image: url(../../assets/images/comp3.png);
+	background-size: 102%;
+	background-repeat: no-repeat;
+}
+
+.red_goalkeeper_6 {
+	animation-name: goalkeeperPosition6;
+	animation-duration: 1s;
+
+	background: none;
+	width: 45px;
+	height: 100px;
+	position: relative;
+	top: 25px;
+	left: 380px;
+	right: 380px;
+	background-image: url(../../assets/images/comp3.png);
+	background-size: 102%;
+	background-repeat: no-repeat;
+}
+
+/* Arquero amarillo */
+.yellow_goalkeeper_1 {
+	animation-name: goalkeeperPosition1;
+	animation-duration: 1s;
+
+	background: none;
+	width: 45px;
+	height: 100px;
+	position: relative;
+	top: 25px;
+	left: 380px;
+	right: 380px;
+	background-image: url(../../assets/images/player3.png);
+	background-size: 102%;
+	background-repeat: no-repeat;
+}
+
+.yellow_goalkeeper_2 {
+	animation-name: goalkeeperPosition2;
+	animation-duration: 1s;
+
+	background: none;
+	width: 45px;
+	height: 100px;
+	position: relative;
+	top: 25px;
+	left: 380px;
+	right: 380px;
+	background-image: url(../../assets/images/player3.png);
+	background-size: 102%;
+	background-repeat: no-repeat;
+}
+
+.yellow_goalkeeper_3 {
+	animation-name: goalkeeperPosition3;
+	animation-duration: 1s;
+
+	background: none;
+	width: 45px;
+	height: 100px;
+	position: relative;
+	top: 25px;
+	left: 380px;
+	right: 380px;
+	background-image: url(../../assets/images/player3.png);
+	background-size: 102%;
+	background-repeat: no-repeat;
+}
+
+.yellow_goalkeeper_4 {
+	animation-name: goalkeeperPosition4;
+	animation-duration: 1s;
+
+	background: none;
+	width: 45px;
+	height: 100px;
+	position: relative;
+	top: 25px;
+	left: 380px;
+	right: 380px;
+	background-image: url(../../assets/images/player3.png);
+	background-size: 102%;
+	background-repeat: no-repeat;
+}
+
+.yellow_goalkeeper_5 {
+	animation-name: goalkeeperPosition5;
+	animation-duration: 1s;
+
+	background: none;
+	width: 45px;
+	height: 100px;
+	position: relative;
+	top: 25px;
+	left: 380px;
+	right: 380px;
+	background-image: url(../../assets/images/player3.png);
+	background-size: 102%;
+	background-repeat: no-repeat;
+}
+
+.yellow_goalkeeper_6 {
+	animation-name: goalkeeperPosition6;
+	animation-duration: 1s;
+
+	background: none;
+	width: 45px;
+	height: 100px;
+	position: relative;
+	top: 25px;
+	left: 380px;
+	right: 380px;
+	background-image: url(../../assets/images/player3.png);
+	background-size: 102%;
+	background-repeat: no-repeat;
+}
+
+/* ------------------------- bocha original --------------------------------------------------- */
+
+.ball_original {
+	width: 30px;
+	height: 30px;
+	background-image: url(../../assets/images/ball.png);
+	background-size: 102%;
+	background-repeat: no-repeat;
+	position: relative;
+	top: 200px;
+	left: 390px;
+	border-radius: 50%;
+}
+
+.ball_1 {
+	animation-name: ballPosition1;
+	animation-duration: 1s;
+	width: 30px;
+	height: 30px;
+	background-image: url(../../assets/images/ball.png);
+	background-size: 102%;
+	background-repeat: no-repeat;
+	position: relative;
+	top: 200px;
+	left: 390px;
+	border-radius: 50%;
+}
+
+.ball_2 {
+	animation-name: ballPosition2;
+	animation-duration: 1s;
+	width: 30px;
+	height: 30px;
+	background-image: url(../../assets/images/ball.png);
+	background-size: 102%;
+	background-repeat: no-repeat;
+	position: relative;
+	top: 200px;
+	left: 390px;
+	border-radius: 50%;
+}
+
+.ball_3 {
+	animation-name: ballPosition3;
+	animation-duration: 1s;
+	width: 30px;
+	height: 30px;
+	background-image: url(../../assets/images/ball.png);
+	background-size: 102%;
+	background-repeat: no-repeat;
+	position: relative;
+	top: 200px;
+	left: 390px;
+	border-radius: 50%;
+}
+
+.ball_4 {
+	animation-name: ballPosition4;
+	animation-duration: 1s;
+	width: 30px;
+	height: 30px;
+	background-image: url(../../assets/images/ball.png);
+	background-size: 102%;
+	background-repeat: no-repeat;
+	position: relative;
+	top: 200px;
+	left: 390px;
+	border-radius: 50%;
+}
+
+.ball_5 {
+	animation-name: ballPosition5;
+	animation-duration: 1s;
+	width: 30px;
+	height: 30px;
+	background-image: url(../../assets/images/ball.png);
+	background-size: 102%;
+	background-repeat: no-repeat;
+	position: relative;
+	top: 200px;
+	left: 390px;
+	border-radius: 50%;
+}
+
+.ball_6 {
+	animation-name: ballPosition6;
+	animation-duration: 1s;
+	width: 30px;
+	height: 30px;
+	background-image: url(../../assets/images/ball.png);
+	background-size: 102%;
+	background-repeat: no-repeat;
+	position: relative;
+	top: 200px;
+	left: 390px;
+	border-radius: 50%;
+}
+
+/* ------------------------------ animaciones d la redonda ----------------------------------------- */
+
+@keyframes ballPosition1 {
+	0% {
+		top: 290px;
+		left: 390px;
+	}
+
+	100% {
+		top: -110px;
+		left: 260px;
+	}
+}
+
+@keyframes ballPosition2 {
+	0% {
+		top: 290px;
+		left: 390px;
+	}
+
+	100% {
+		top: -120px;
+		left: 380px;
+	}
+}
+
+@keyframes ballPosition3 {
+	0% {
+		top: 290px;
+		left: 390px;
+	}
+
+	100% {
+		top: -110px;
+		left: 490px;
+	}
+}
+
+@keyframes ballPosition4 {
+	0% {
+		top: 290px;
+		left: 390px;
+	}
+
+	100% {
+		top: -65px;
+		left: 270px;
+	}
+}
+
+@keyframes ballPosition5 {
+	0% {
+		top: 290px;
+		left: 390px;
+	}
+
+	100% {
+		top: -50px;
+		left: 390px;
+	}
+}
+
+@keyframes ballPosition6 {
+	0% {
+		top: 290px;
+		left: 390px;
+	}
+
+	100% {
+		top: -50px;
+		left: 490px;
+	}
+}
+
+

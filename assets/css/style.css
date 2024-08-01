@@ -1,5 +1,4 @@
 * {
-	background: #141e30;
 	background-color: -webkit-linear-gradient(to right, #243b55, #141e30);
 	color: azure;
 	font-family: VT323;
@@ -20,15 +19,6 @@
 
 .invisible {
 	opacity: 0%;
-}
-
-.backgroundImage {
-	height: 480px;
-	width: 800px;
-	background-image: url(./assets/images/Milan\ Stadium.png);
-	background-size: 330%;
-	background-position: center;
-	background-position-y: -140px;
 }
 
 .backgroundImage {
